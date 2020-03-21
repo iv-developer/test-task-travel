@@ -1,0 +1,15 @@
+{% extends 'templates/layout/base.html' %}
+
+{% block title %}test-task-travel{% endblock %}
+
+{% set imgsrc = 'img/' %}
+{% set iconsrc = 'img/icons/' %}
+
+{% block body %}
+    {% include "templates/components/journal.html" %}
+    {% include "templates/components/work.html" %}
+    {% include "templates/components/travel.html" %}
+    {% include "templates/components/gallery.html" %}
+    {% include "templates/components/partners.html" %}
+    {% include "templates/components/reviews.html" %}
+{% endblock %}
