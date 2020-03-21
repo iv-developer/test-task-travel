@@ -1,0 +1,38 @@
+body,
+html {
+    position: relative;
+    //font-family: $font;
+    height: 100%;
+    width: 100%;
+    //background-color: $gray;
+}
+
+body, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+html, 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+*, 
+:after, 
+:before {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

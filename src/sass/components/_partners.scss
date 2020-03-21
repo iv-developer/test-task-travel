@@ -1,0 +1,16 @@
+.partenrs {
+    background-color: $color-partners;
+    padding: 74px 0 71px;
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        img {
+            filter: brightness(0);
+        }
+    }
+}

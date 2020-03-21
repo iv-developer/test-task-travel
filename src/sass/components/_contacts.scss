@@ -1,0 +1,69 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin: 140px 0 163px;
+}
+
+.form {
+    width: 514px;
+    padding: 36px 28px 50px;
+    margin-bottom: 0;
+    border-radius: 3px;
+    font-family: $font-opensans;
+    text-align: center;
+    background: transparent url('#{$src-img}/form-bg.png') center no-repeat;
+
+    &__title {
+        margin-bottom: 7px;
+        font-size: #{(36/16)}em;
+        font-weight: 600;
+        line-height: 1em;
+        letter-spacing: 4px;
+        color: $color-blue;
+    }
+
+    &__text {
+        font-size: 1em;
+        color: $color-text-contacts;
+        margin-bottom: 32px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 20px;
+        padding: 22px 20px;
+        border-radius: 3px;
+        font-family: $font-roboto;
+        font-size: #{(18/16)}em;
+        font-weight: 400;
+        background-color: $color-white;
+        color: $color-text-input;
+        border: none;
+        outline: none;
+
+        @include placeholder($color-text-input);
+    }
+
+    &__submit {
+        display: block;
+        width: 100%;
+        height: 70px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        background-color: $color-blue;
+        font-family: $font-opensans;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $color-white;
+        transition: background-color ease .2s;
+
+        &:hover {
+            background-color: #12a4d9;
+        }
+    }
+}

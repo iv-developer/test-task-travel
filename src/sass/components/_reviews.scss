@@ -1,0 +1,43 @@
+.reviews {
+    padding-top: 70px;
+    background: url('#{$src-img}/reviews-bg.png') center bottom no-repeat;
+
+    .title {
+        margin-bottom: 82px;
+    }
+
+    .review {
+        padding: 0 10px;
+        font-family: $font-opensans;
+
+        &__quotes {
+            margin-bottom: 12px;
+        }
+
+        &__text {
+            margin-bottom: 24px;
+            font-size: #{(18/16)}em;
+            line-height: 1.8em;
+            color: $color-text-review;
+        }
+    }
+
+    .client {
+        display: flex;
+        align-items: center;
+
+        &__profile {
+            margin-right: 20px;
+        }
+
+        &__name {
+            font-size: 1em;
+            font-weight: 600;
+            color: $color-blue;
+        }
+
+        &__position {
+            font-weight: 400;
+        }
+    }
+}

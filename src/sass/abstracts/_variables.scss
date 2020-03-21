@@ -1,0 +1,34 @@
+//fonts
+@include font-face(
+    'Times New Romance',
+    '/fonts/TimesNewRomanPSMT',
+    null,
+    null,
+    eot woff ttf
+)
+
+$font-opensans:        'Open Sans', sans-serif;
+$font-roboto:          'Roboto', sans-serif;
+$font-timesnewromance: 'Times New Romance', sans-serif;
+
+//colors
+$color-white: #fff;
+$color-blue: #16b5ef;
+
+$color-partners: #f8f9fa;
+
+$color-text: #777777;
+$color-text-dark: #949494;
+$color-text-title: #2c2e37;
+$color-text-minititle: #2c2e37;
+$color-text-review: #bcbcbc;
+$color-text-contacts: #383e4a;
+$color-text-input: #ccc;
+$color-footer-text: #6E9AA8;
+$color-footer: #3E5F6A;
+
+$black: #231f20;
+$orange: #f7941f;
+
+//images
+$src-img: '../img';

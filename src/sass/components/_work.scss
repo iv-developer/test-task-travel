@@ -1,0 +1,37 @@
+.work {
+    margin-top: 113px;
+    
+    .title {
+        margin-bottom: 64px;
+    }
+
+    &__bg {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    &__item {
+        width: 190px;
+        text-align: center;
+        font-family: $font-roboto;
+    }
+
+    &__title {
+        margin-top: 24px;
+        color: $color-text-title;
+        font-size: #{(18/16)}em;
+        font-weight: 900;
+    }
+
+    &__text {
+        font-size: 1em;
+        color: $color-text-dark;
+        margin: 0 -10px;
+    }
+}

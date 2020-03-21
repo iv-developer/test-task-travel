@@ -1,0 +1,135 @@
+.journal {
+    padding-top: 106px;
+
+    &__posts {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-auto-rows: minmax(380px, auto);
+        box-shadow: 0 0 21px rgba(6,6,6,0.13);
+    }
+
+    &__post {
+        position: relative;
+        
+        &--love,
+        &--tree,
+        &--water {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                z-index: 100;
+            }
+        }
+
+        &--love {
+            &::before {
+                top: 50px;
+                left: -10px;
+                border-top: 10px solid transparent;
+                border-right: 10px solid $color-white;
+                border-bottom: 10px solid transparent;
+            }
+        }
+
+        &--tree {
+            &::before {
+                top: 50px;
+                right: -10px;
+                border-top: 10px solid transparent;
+                border-left: 10px solid $color-white;
+                border-bottom: 10px solid transparent;
+            }
+        }
+
+        &--water {
+            &::before {
+                top: -10px;
+                left: 53px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid $color-white;
+            }
+        }
+    }
+
+    &__image {
+        &__bg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between;
+        align-items: center; */
+        height: 100%;
+        padding: 41px 30px;
+        text-align: center;
+
+        &__label {
+            font-family: $font-opensans;
+            font-size: #{(11/16)}em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $color-blue;
+            margin-bottom: 47px;
+        }
+
+        &__title {
+            font-family: $font-opensans;
+            font-size: #{(16/16)}em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.4px;
+            color: $color-text-minititle;
+            margin-bottom: 19px;
+
+            & > span {
+                position: relative;
+                display: inline-block;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    height: 2px;
+                    width: 100%;
+                    transform: translateY(-50%);
+                    background-color: #151517;
+                }
+            }
+        }
+
+        &__text {
+            font-family: $font-opensans;
+            font-size: #{(14/16)}em;
+            line-height: #{(25/16)}em;
+            font-weight: 400;
+            color: $color-text;
+        }
+
+        &__page {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-grow: 1;
+            font-family: $font-timesnewromance;
+            font-size: #{(14/16)}em;
+            font-weight: 400;
+            font-style: italic;
+            color: $color-text-minititle;
+        }
+    }
+}

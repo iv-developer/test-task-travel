@@ -1,0 +1,23 @@
+.title {
+    position: relative;
+    font-family: $font-opensans;
+    font-size: #{(30/16)}em;
+    line-height: #{(42/30)}em;
+    letter-spacing: 3px;
+    padding-top: 33px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    color: $color-text-title;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 7px;
+        background: url('#{$src-img}/title-border.png') center no-repeat;
+    }
+}

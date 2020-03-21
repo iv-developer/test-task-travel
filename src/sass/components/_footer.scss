@@ -1,0 +1,46 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0;
+    //background-color: $color-footer;
+
+    .container {
+        padding: 0 20px;
+    }
+
+    &__authority {
+        font-family: $font-opensans;
+        font-size: #{(18/16)}em;
+        color: $color-footer-text;
+    }
+
+    &__phone {
+        display: inline-block;
+        float: right;
+        font-family: $font-roboto;
+        font-size: #{(27/16)}em;
+        font-weight: 900;
+        color: $color-footer-text;
+        text-decoration: none;
+        transition: color .2s ease;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+    }
+}

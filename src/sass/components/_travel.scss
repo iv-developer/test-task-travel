@@ -1,0 +1,69 @@
+.travel {
+    position: relative;
+    background: url('#{$src-img}/travel-bg.png') center bottom no-repeat;
+    margin-top: 97px;
+    padding-bottom: 475px;
+
+    .title {
+        margin-bottom: 89px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        position: relative;
+        width: 200px;
+        height: 382px;
+        padding: 4px 12px 20px 20px;
+        border-radius: 3px;
+        font-family: $font-opensans;
+        color: $color-white;
+
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        &__content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+    }
+
+    &__title {
+        font-size: #{(28/16)}em;
+        font-weight: 400;
+        margin-top: 15px;
+        margin-bottom: 7px;
+    }
+
+    &__text {
+        font-size: 1em;
+    }
+
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price {
+        font-size: #{(26/16)}em;
+        line-height: 0.9em;
+        font-weight: 800;
+
+        &--old {
+            font-size: #{(18/16)}em;
+            font-weight: 400;
+        }
+    }
+}
