@@ -1,0 +1,33 @@
+<div class="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title">Our clients say</h2>
+            </div>
+            <div class="col-6">
+                <div class="review">
+                    <p class="review__quotes"><img src="{{iconsrc}}icon-quotes.png" alt=""></p>
+                    <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                    <div class="client">
+                        <img src="{{imgsrc}}client-1.png" alt="client" class="client__profile">
+                        <p class="client__name">Pavliv Yaroslav <span class="client__position">Web designer</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="review">
+                    <p class="review__quotes"><img src="{{iconsrc}}icon-quotes.png" alt=""></p>
+                    <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                    <div class="client">
+                        <img src="{{imgsrc}}client-2.png" alt="client" class="client__profile">
+                        <p class="client__name">John Scott <span class="client__position">The Fringe</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                {% include "templates/components/contacts.html" %}
+            </div>
+        </div>
+    </div>
+    {% include "templates/components/footer.html" %}
+</div>

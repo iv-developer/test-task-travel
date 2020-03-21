@@ -1,0 +1,72 @@
+{% set travelCards = [
+    { 
+        img: 'travel-card-1.jpg',
+        stars: 'stars-four.png',
+        title: 'Carpathian',
+        text: 'Lorem ipsum dolor si amet, consectetur',
+        oldPrice: '3150',
+        newPrice: '793'
+    },
+    { 
+        img: 'travel-card-2.jpg',
+        stars: 'stars-five.png',
+        title: 'Alps',
+        text: 'Lorem ipsum dolor si amet, consectetur',
+        oldPrice: '3150',
+        newPrice: '1893'
+    },
+    { 
+        img: 'travel-card-3.jpg',
+        stars: 'stars-five.png',
+        title: 'Pyrenees',
+        text: 'Lorem ipsum dolor si amet, consectetur',
+        oldPrice: '3150',
+        newPrice: '2593'
+    },
+    { 
+        img: 'travel-card-4.jpg',
+        stars: 'stars-five.png',
+        title: 'Rocky',
+        text: 'Lorem ipsum dolor si amet, consectetur',
+        oldPrice: '3150',
+        newPrice: '2123'
+    },
+    { 
+        img: 'travel-card-5.jpg',
+        stars: 'stars-three.png',
+        title: 'Kavkaz',
+        text: 'Lorem ipsum dolor si amet, consectetur',
+        oldPrice: '3150',
+        newPrice: '593'
+    }
+] %}
+
+<div class="travel">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="title">Travel with us</h2>
+                <ul class="travel__cards">
+                    {% for card in travelCards %}
+                        <li class="travel__card">
+                            <img src="{{ imgsrc }}{{ card.img }}" class="travel__card__img" alt="">
+                            <div class="travel__card__content">
+                                <div class="travel__stars">
+                                    <img src="{{ imgsrc }}{{ card.stars }}" alt="">
+                                </div>
+                                <div class="travel__block">
+                                    <h4 class="travel__title">{{ card.title }}</h4>
+                                    <p class="travel-text">{{ card.text }}</p>
+                                </div>
+                                <div class="travel__prices">
+                                    <p class="travel__price travel__price--old">{{ card.oldPrice }}$</p>
+                                    <p class="travel__price">${{ card.newPrice }}</p>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
